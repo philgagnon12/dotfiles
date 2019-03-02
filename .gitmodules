@@ -1,0 +1,3 @@
+[submodule "autohotkey-windows-mac-keyboard"]
+	path = autohotkey-windows-mac-keyboard
+	url = https://github.com/philgagnon12/autohotkey-windows-mac-keyboard.git
