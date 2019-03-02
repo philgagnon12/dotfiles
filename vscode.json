@@ -1,0 +1,25 @@
+// Theme
+// workbench.colorTheme : "One Dark Pro Vivid"
+{
+    "editor.minimap.showSlider": "always",
+    "editor.rulers": [
+        80
+    ],
+    "window.zoomLevel": 0,
+    "editor.smoothScrolling": true,
+    "editor.mouseWheelScrollSensitivity": 1,
+    "workbench.iconTheme": "vscode-icons",
+    "bracket-pair-colorizer-2.colors": [
+        "Gold",
+        "Orchid",
+        "LightSkyBlue"
+    ],
+    "workbench.editor.showTabs": true,
+    "workbench.colorTheme": "Tomorrow Night",
+    "editor.renderWhitespace": "all",
+    "problems.autoReveal": false,
+    "explorer.autoReveal": false,
+    "editor.detectIndentation": false,
+    "editor.insertSpaces": true,
+    "editor.tabSize": 4
+}
