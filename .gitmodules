@@ -1,6 +1,3 @@
 [submodule "autohotkey-windows-mac-keyboard"]
 	path = autohotkey-windows-mac-keyboard
 	url = https://github.com/philgagnon12/autohotkey-windows-mac-keyboard.git
-[submodule "vim-multiple-cursors"]
-	path = vim-multiple-cursors
-	url = https://github.com/terryma/vim-multiple-cursors.git
