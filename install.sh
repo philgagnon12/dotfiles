@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Directory of this script
-DIR=dirname $0
+DIR=$(cd `dirname $0` && pwd)
 
 # Create destination
 DOTFILES=~/.dotfiles
@@ -16,7 +16,7 @@ ln -s ${DIR}/sensible.tmux ${DOTFILES}
 
 # Move to not overwrite
 mv ~/.bashrc ~/._bashrc
-cp ~/.tmux.conf ~/._tmux.conf
+mv ~/.tmux.conf ~/._tmux.conf
 
 ln -s ${DIR}/.bashrc ~
 ln -s ${DIR}/.tmux.conf ~

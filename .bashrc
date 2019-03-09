@@ -1,7 +1,7 @@
 #Enable colors
-source .dotfiles/bash_colors.sh
+source ~/.dotfiles/bash_colors.sh
 export CLI_COLORS=1
-export PS1="$(clr_red \\u):$(clr_cyan \\W)\$ "
+export MYPS1="$(clr_red \\u):$(clr_cyan \\W)"
 
 #export LS_COLORS
 dircolors > /dev/null
@@ -10,7 +10,7 @@ dircolors > /dev/null
 export EDITOR=vim
 
 # GIT powerline
-source .dotfiles/bash-powerline.sh
+source ~/.dotfiles/bash-powerline.sh
 
 #include aliases
-source .dotfiles/aliases.sh
+source ~/.dotfiles/aliases.sh
