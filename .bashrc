@@ -1,3 +1,6 @@
+#PATH
+PATH=~/bin:$PATH
+
 #Enable colors
 source ~/.dotfiles/bash_colors.sh
 export CLI_COLORS=1
