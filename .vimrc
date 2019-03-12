@@ -3,6 +3,8 @@ set number
 set splitbelow
 set splitright
 
+set list
+
 source ~/.dotfiles/sensible.vim
 
 augroup CursorLine
@@ -12,3 +14,4 @@ augroup CursorLine
 augroup END
 
 hi CursorLine term=bold cterm=bold ctermbg=8
+hi SpecialKey ctermfg=red
