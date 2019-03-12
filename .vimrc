@@ -1,5 +1,7 @@
 set path+=$PWD/**
 set number
+set splitbelow
+set splitright
 
 source ~/.dotfiles/sensible.vim
 
