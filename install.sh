@@ -16,10 +16,10 @@ ln -s ${DIR}/sensible.tmux ${DOTFILES}
 ln -s ${DIR}/sensible.vim ${DOTFILES}
 
 # Move to not overwrite
-mv ~/.bashrc ~/._bashrc
+mv ~/.bash_profile ~/._bash_profile
 mv ~/.tmux.conf ~/._tmux.conf
 mv ~/.vimrc ~/._vimrc
 
-ln -s ${DIR}/.bashrc ~
+ln -s ${DIR}/.bash_profile ~
 ln -s ${DIR}/.tmux.conf ~
 ln -s ${DIR}/.vimrc ~

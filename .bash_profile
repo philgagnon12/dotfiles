@@ -4,10 +4,12 @@ PATH=~/bin:$PATH
 #Enable colors
 source ~/.dotfiles/bash_colors.sh
 export CLI_COLORS=1
-export MYPS1="$(clr_red \\u):$(clr_cyan \\w)"
+export MYPS1="$(clr_red \\u):$(clr_blue \\w)"
 
 #export LS_COLORS
-dircolors > /dev/null
+if ! [[ -z $(command -v dircolors) ]]; then
+	dircolors > /dev/null
+fi
 
 # VIM as default editor
 export EDITOR=vim
