@@ -17,3 +17,4 @@ mv ${DESTINATION}/ncurses-6.1 ${DESTINATION}/ncurses
 cd ${DESTINATION}/ncurses
 ./configure --with-normal --enable-widec
 make
+make install
