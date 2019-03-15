@@ -19,3 +19,9 @@ source ~/.dotfiles/bash-powerline.sh
 
 #include aliases
 source ~/.dotfiles/aliases.sh
+
+#Enable base16 color themes
+source ~/.dotfiles/base16-shell.sh ~/.dotfiles/base16-shell
+
+#Shell color
+base16_atlas

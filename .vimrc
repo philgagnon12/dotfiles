@@ -28,3 +28,6 @@ hi CursorLine term=bold cterm=bold ctermbg=8
 
 " White space style
 hi SpecialKey ctermfg=red ctermbg=red
+
+" Color theme
+source ~/.dotfiles/base16-shell.vim
