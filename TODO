@@ -1,0 +1,9 @@
+- Install scripts:
+    - st ( terminal emulator )
+    -- libx11
+    -- libxft
+    - vim
+    - curl
+    - tmux
+
+- Custom tmux status line
