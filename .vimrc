@@ -24,7 +24,7 @@ augroup CursorLine
 augroup END
 
 " Curosr line style
-hi CursorLine term=bold cterm=bold ctermbg=8
+hi CursorLine term=bold cterm=bold ctermbg=18
 
 " White space style
 hi SpecialKey ctermfg=red ctermbg=red

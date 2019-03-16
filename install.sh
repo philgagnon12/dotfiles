@@ -28,3 +28,4 @@ ln -s ${DIR}/.vimrc ~
 
 # Install base16-shell
 source ${DIR}/script/base16-shell_install.sh ${DOTFILES}/base16-shell
+source ${DIR}/script/base16-vim_install.sh ${DOTFILES}/base16-vim
