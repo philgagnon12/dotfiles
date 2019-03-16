@@ -4,10 +4,15 @@ echo $1
 DESTINATION=$1
 
 if [[ -z $DESTINATION ]]; then
-	echo "Need a destination"
-	exit
+    echo "DESTINATION required"
+    exit
 fi
 
+# Dont clone if folder already exists
+if [[ -d ${DESTINATION} ]]; then
+    echo "${DESTINATION} exists"
+    exit 0
+fi
 
 mkdir -p ${DESTINATION}
 
