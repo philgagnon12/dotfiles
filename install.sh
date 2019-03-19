@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# $1 can either be "--download-only" or "--install-from-download-only"
+
 # Directory of this script
 DIR=$(cd `dirname $0` && pwd)
 
@@ -27,5 +29,5 @@ ln -s ${DIR}/.tmux.conf ~
 ln -s ${DIR}/.vimrc ~
 
 # Install base16-shell
-source ${DIR}/script/base16-shell_install.sh ${DOTFILES}/base16-shell
-source ${DIR}/script/base16-vim_install.sh ${DOTFILES}/base16-vim
+source ${DIR}/script/base16-shell_install.sh ${DOTFILES}/base16-shell $1
+source ${DIR}/script/base16-vim_install.sh ${DOTFILES}/base16-vim $1

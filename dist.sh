@@ -6,6 +6,5 @@ echo "Archiving ..."
 tar cvfh dotfiles.tar.gz ${HOME}/.dotfiles \
                          ${HOME}/.bash_profile \
                          ${HOME}/.tmux.conf \
-                         ${HOME}/.vimrc \
-                         ${HOME}/.vim
+                         ${HOME}/.vimrc
 
