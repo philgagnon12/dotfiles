@@ -23,8 +23,9 @@ augroup CursorLine
 	au WinLeave * setlocal nocursorline
 augroup END
 
-" Curosr line style
-hi CursorLine term=bold cterm=bold ctermbg=18
+" Cursor line style
+" Commented because base16-vim provides better highlighting
+" hi CursorLine term=bold cterm=bold ctermbg=18
 
 " White space style
 hi SpecialKey ctermfg=red ctermbg=red
