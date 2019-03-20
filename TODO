@@ -1,9 +1,13 @@
 - Install scripts:
-    - st ( terminal emulator )
-    -- libx11
+    - st ( terminal emulator ) 
+    -- libx11 (XQuartz on osx )
     -- libxft
     - vim
     - curl
     - tmux
 
 - Custom tmux status line
+
+- tmux scroll keybindings like vim
+- longterm & shortterm bash function so that i can switch between longversion and short (user: ~/path: master $, or just $ )
+- vim tab highlight dirty file
