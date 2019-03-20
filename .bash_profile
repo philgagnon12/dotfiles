@@ -4,7 +4,18 @@ PATH=~/bin:$PATH
 #Enable colors
 source ~/.dotfiles/bash_colors.sh
 export CLI_COLORS=1
-export MYPS1="$(clr_red \\u):$(clr_blue \\w)"
+SHORTPS="\$ "
+export MYPS1=${SHORTPS}
+
+# Define longps
+longps() {
+    MYPS1="$(clr_red \\u):$(clr_blue \\w)"
+}
+
+#define shortps
+shortps() {
+    MYPS1=${SHORTPS}
+}
 
 #export LS_COLORS
 if ! [[ -z $(command -v dircolors) ]]; then
