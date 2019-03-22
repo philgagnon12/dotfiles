@@ -27,6 +27,9 @@ fi
 # VIM as default editor
 export EDITOR=vim
 
+# Set vi mode for bash
+set -o vi
+
 # GIT powerline
 source ~/.dotfiles/bash-powerline.sh
 
