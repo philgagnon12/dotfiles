@@ -16,6 +16,8 @@ longps() {
 shortps() {
     MYPS1=${SHORTPS}
 }
+# default is longps
+longps
 
 #export LS_COLORS
 if ! [[ -z $(command -v dircolors) ]]; then

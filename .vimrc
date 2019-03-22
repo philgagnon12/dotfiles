@@ -1,8 +1,13 @@
 set path+=$PWD/**
 " Show line numbers
 set number
+
+" Always show tabline
+set showtabline=2
+
+" When split be positionned down, ( OFF )
+" set splitbelow
 " Split from left to right
-set splitbelow
 set splitright
 
 " Show white spaces
@@ -29,8 +34,15 @@ augroup END
 " Commented because base16-vim provides better highlighting
 " hi CursorLine term=bold cterm=bold ctermbg=18
 
-" White space style
-hi SpecialKey ctermfg=red ctermbg=red
-
 " Color theme
 source ~/.dotfiles/base16-shell.vim
+
+" White space style
+hi SpecialKey ctermfg=red
+
+" TabLine
+hi TabLineFill term=bold ctermbg=6
+hi TabLineSel  term=bold ctermfg=18 ctermbg=4
+
+" () {} [] coloring when hovering
+hi MatchParen term=reverse ctermfg=18 ctermbg=14
