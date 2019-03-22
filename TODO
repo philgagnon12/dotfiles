@@ -10,5 +10,5 @@
 
 - tmux scroll keybindings like vim
 - longterm & shortterm bash function so that i can switch between longversion and short (user: ~/path: master $, or just $ )
-- vim tab highlight dirty file
+- vim tab highlight dirty file tabline
 - vim bracket matching different color than cursor
