@@ -1,4 +1,6 @@
-#! /usr/bin/env bash
+#!/usr/bin/env bash
+
+echo "Installing base16-shell..."
 echo $0
 echo $1
 DESTINATION=$1
@@ -23,20 +25,15 @@ fi
 if [[ $DOWNLOAD_ONLY -eq 1 ]]; then
     echo "Downloading..."
     mkdir -p ${DESTINATION}
-    curl https://invisible-mirror.net/archives/ncurses/ncurses-6.1.tar.gz > ${DESTINATION}/ncurses-6.1.tar.gz
+    curl -L https://github.com/tmux/tmux/releases/download/2.8/tmux-2.8.tar.gz > ${DESTINATION}/tmux-2.8.tar.gz
+    tar xvf ${DESTINATION}/tmux-2.8.tar.gz -C ${DESTINATION}
+    mv ${DESTINATION}/tmux-2.8 ${DESTINATION}/tmux
 fi
 
 if [[ $INSTALL_FROM_DOWNLOAD_ONLY -eq 1 ]]; then
     echo "Installing..."
-
-    tar xzf ${DESTINATION}/ncurses-6.1.tar.gz -C ${DESTINATION}
-mv ${DESTINATION}/ncurses-6.1 ${DESTINATION}/ncurses
-    cd ${DESTINATION}/ncurses
-    ./configure --with-normal --enable-widec
+    cd ${DESTINATION}/tmux
+    ./configure --prefix=${DESTINATION} CFLAGS="-I${HOME}/lib/libevent/include -I${HOME}/lib/ncurses/include" LDFLAGS="-L${HOME}/lib/ncurses/lib"
     make
-    make install.data
-
-    ./configure --with-normal
-    make
-    make install.data
+    make install
 fi

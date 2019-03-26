@@ -41,7 +41,7 @@ source ~/.dotfiles/base16-shell.vim
 hi SpecialKey ctermfg=red
 
 " TabLine
-hi TabLineFill term=bold ctermbg=6
+hi TabLineFill term=bold ctermbg=18
 hi TabLineSel  term=bold ctermfg=18 ctermbg=4
 
 " () {} [] coloring when hovering
