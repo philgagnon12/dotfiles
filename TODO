@@ -19,3 +19,5 @@ The way i compile tmux, it uses ncurses without wide char
 i have to link libncurses.a -> libcurses.a .... maybe the other curses libs too (tmux)?
 
 look at cdk cursess dev kit , it has widgets
+
+When install script is ran, print what was installed , download and not done at all 
