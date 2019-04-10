@@ -31,11 +31,11 @@ fi
 if [[ $INSTALL_FROM_DOWNLOAD_ONLY -eq 1 ]]; then
     echo "Installing..."
     cd ${DESTINATION}/libevent
-    ./configure --prefix=${DESTINATION}
+    ./configure --prefix=${DESTINATION}/libevent
     make
     # make install will create the structure :
-    # ${DESTINATION}/lib
-    # ${DESTINATION}/bin
-    # ${DESTINATION}/include
+    # ${DESTINATION}/libevent/lib
+    # ${DESTINATION}/libevent/bin
+    # ${DESTINATION}/libevent/include
     make install
 fi

@@ -4,17 +4,17 @@
     -- libxft
     - vim
     - curl
-    - tmux
 
 - Custom tmux status line
 
 - tmux scroll keybindings like vim
-- longterm & shortterm bash function so that i can switch between longversion and short (user: ~/path: master $, or just $ )
 - window number in tabline are hidden cause they dont have a color
 
 When installing ncurses library, might need sudo to be able to install the database files, or maybe find a way to have a path for those ? ( try on a system without curses preinstalled)
 
-The way i compile tmux, it uses ncurses without wide char
+** tmux **
+ - The way i compile tmux, it uses ncurses without wide char
+ - when installing tmux in my home bin dir , it creates a share folder for the man pages, tell man to use those 
 
 i have to link libncurses.a -> libcurses.a .... maybe the other curses libs too (tmux)?
 

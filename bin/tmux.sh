@@ -27,13 +27,12 @@ if [[ $DOWNLOAD_ONLY -eq 1 ]]; then
     mkdir -p ${DESTINATION}
     curl -L https://github.com/tmux/tmux/releases/download/2.8/tmux-2.8.tar.gz > ${DESTINATION}/tmux-2.8.tar.gz
     tar xvf ${DESTINATION}/tmux-2.8.tar.gz -C ${DESTINATION}
-    mv ${DESTINATION}/tmux-2.8 ${DESTINATION}/tmux
 fi
 
 if [[ $INSTALL_FROM_DOWNLOAD_ONLY -eq 1 ]]; then
     echo "Installing..."
-    cd ${DESTINATION}/tmux
-    ./configure --prefix=${DESTINATION} CFLAGS="-I${HOME}/lib/libevent/include -I${HOME}/lib/ncurses/include" LDFLAGS="-L${HOME}/lib/ncurses/lib"
+    cd ${DESTINATION}/tmux-2.8
+    ./configure --prefix=${HOME} CFLAGS="-I${HOME}/lib/libevent/include -I${HOME}/lib/ncurses/include" LDFLAGS="-L${HOME}/lib/libevent/lib -L${HOME}/lib/ncurses/lib"
     make
     make install
 fi

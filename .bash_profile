@@ -4,7 +4,7 @@ PATH=~/bin:$PATH
 #Enable colors
 source ~/.dotfiles/bash_colors.sh
 export CLI_COLORS=1
-SHORTPS="\$ "
+SHORTPS=""
 export MYPS1=${SHORTPS}
 
 # Define longps
