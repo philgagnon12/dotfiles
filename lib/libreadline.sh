@@ -20,5 +20,6 @@ curl ftp://ftp.cwru.edu/pub/bash/readline-8.0.tar.gz > ${DESTINATION}/readline-8
 tar zxf ${DESTINATION}/readline-8.0.tar.gz -C ${DESTINATION}
 mv ${DESTINATION}/readline-8.0 ${DESTINATION}/readline
 cd ${DESTINATION}/readline
-./configure
+./configure --prefix=${DESTINATION}/readline
 make
+make install
