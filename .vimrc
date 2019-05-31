@@ -1,6 +1,7 @@
 set path+=$PWD/**
 " Show line numbers
 set number
+set relativenumber
 
 " Always show tabline
 set showtabline=2
