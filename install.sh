@@ -18,6 +18,8 @@ ln -s ${DIR}/sensible.tmux ${DOTFILES}
 ln -s ${DIR}/sensible.vim ${DOTFILES}
 ln -s ${DIR}/script/base16-shell.sh ${DOTFILES}
 ln -s ${DIR}/script/base16-shell.vim ${DOTFILES}
+ln -s ${DIR}/tmux_vim.sh ${DOTFILES}
+ln -s ${DIR}/tmux_buffer.sh ${DOTFILES}
 
 # Move to not overwrite
 mv ~/.bash_profile ~/._bash_profile
