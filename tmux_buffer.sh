@@ -10,8 +10,8 @@ init() {
 }
 
 keyBind() {
-    tmux unbind-key -T copy-mode-vi Enter
-    tmux bind-key   -T copy-mode-vi Enter "run-shell" "$0 copySelectionPromptForBufferName"
+    tmux unbind-key -T copy-mode-vi y
+    tmux bind-key   -T copy-mode-vi y "run-shell" "$0 copySelectionPromptForBufferName"
 
     tmux unbind-key -T prefix "]"
     tmux bind-key   -T prefix "]" "run-shell" "$0 promptPasteBufferName"
