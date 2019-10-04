@@ -1,0 +1,6 @@
+# vi mode enable
+set editing-mode vi
+# Show cmd or ins, required $BASH_VERSION 5+
+set show-mode-in-prompt on
+# Refresh when hit ESC fast to show cmd or ins
+set keyseq-timeout 50
