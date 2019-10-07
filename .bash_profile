@@ -1,15 +1,18 @@
 #PATH
 PATH=~/bin:$PATH
 
-#Enable colors
-source ~/.dotfiles/bash_colors.sh
 export CLI_COLORS=1
 SHORTPS=""
 export MYPS1=${SHORTPS}
 
+RED=$(tput setaf 9)
+BLUE=$(tput setaf 12)
+# Exit Attributes / turnoff
+EA=$(tput sgr0)
+
 # Define longps
 longps() {
-    MYPS1="$(clr_red \\u):$(clr_blue \\w)"
+    MYPS1="${RED}\\u${EA}:${BLUE}\\w${EA}"
 }
 
 #define shortps
@@ -40,4 +43,4 @@ source ~/.dotfiles/aliases.sh
 source ~/.dotfiles/base16-shell.sh ~/.dotfiles/base16-shell
 
 #Shell color
-base16_atlas
+base16_unikitty-dark
