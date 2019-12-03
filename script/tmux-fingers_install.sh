@@ -24,6 +24,6 @@ fi
 
 if [[ $DOWNLOAD_ONLY -eq 1 ]]; then
     echo "Downloading..."
-    git clone --recursive https://github.com/Morantron/tmux-fingers ${DESTINATION}
+    git clone --recursive -b 0.10.1 https://github.com/Morantron/tmux-fingers ${DESTINATION}
 fi
 
