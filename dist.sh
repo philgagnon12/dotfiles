@@ -14,4 +14,5 @@ tar czvfh dotfiles.tar.gz --exclude .git --exclude .DS_Store \
     .dotfiles \
     .bash_profile \
     .tmux.conf \
+    .inputrc \
     .vimrc
