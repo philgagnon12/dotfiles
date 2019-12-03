@@ -28,7 +28,12 @@ mv ~/.vimrc ~/._vimrc
 ln -s ${DIR}/.bash_profile ~
 ln -s ${DIR}/.tmux.conf ~
 ln -s ${DIR}/.vimrc ~
+ln -s ${DIR}/.inputrc ~
 
 # Install base16-shell
 source ${DIR}/script/base16-shell_install.sh ${DOTFILES}/base16-shell $1
 source ${DIR}/script/base16-vim_install.sh ${DOTFILES}/base16-vim $1
+
+# Install tmux-fingers
+source ${DIR}/script/tmux-fingers_install.sh ${DOTFILES}/tmux-fingers $1
+

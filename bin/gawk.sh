@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-echo "Installing tmux..."
+echo "Installing gawk..."
 echo $0
 echo $1
 DESTINATION=$1
@@ -26,13 +26,14 @@ if [[ $DOWNLOAD_ONLY -eq 1 ]]; then
     echo "Downloading..."
     mkdir -p ${DESTINATION}
     curl -L https://github.com/tmux/tmux/releases/download/3.0a/tmux-3.0a.tar.gz > ${DESTINATION}/tmux-3.0a.tar.gz
-    tar xvf ${DESTINATION}/tmux-3.0a.tar.gz -C ${DESTINATION}
+    curl -L https://ftp.gnu.org/gnu/gawk/gawk-5.0.1.tar.gz > ${DESTINATION}/gawk-5.0.1.tar.gz
+    tar xvf ${DESTINATION}/gawk-5.0.1.tar.gz -C ${DESTINATION}
 fi
 
 if [[ $INSTALL_FROM_DOWNLOAD_ONLY -eq 1 ]]; then
     echo "Installing..."
-    cd ${DESTINATION}/tmux-3.0a
-    ./configure --prefix=${HOME} CFLAGS="-I${HOME}/lib/libevent/include -I${HOME}/lib/ncurses/include" LDFLAGS="-L${HOME}/lib/libevent/lib -L${HOME}/lib/ncurses/lib"
+    cd ${DESTINATION}/gawk-5.0.1
+    ./configure --prefix=${HOME}
     make
     make install
 fi
