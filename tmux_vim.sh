@@ -26,7 +26,7 @@ TMUX_VIM_MODE=$TMUX_VIM_MODE_OPTION
 init() {
     keybind
 
-    # Vim/Tmux toggle state, default 1 == TMUX
+    # Vim/Tmux toggle state, default 1 = TMUX
     TMUX_VIM_TOGGLE=1
     tmux set-option -g @TMUX_VIM_TOGGLE 1
 
@@ -94,33 +94,33 @@ updateLabelOption() {
 }
 
 actionLeft() {
-    if [ $TMUX_VIM_MODE == $MODE_SELECT ]
+    if [ $TMUX_VIM_MODE = $MODE_SELECT ]
     then selectPaneLeft
-    elif [ $TMUX_VIM_MODE == $MODE_RESIZE ]
+    elif [ $TMUX_VIM_MODE = $MODE_RESIZE ]
     then resizePaneLeft
     fi
 }
 
 actionDown() {
-    if [ $TMUX_VIM_MODE == $MODE_SELECT ]
+    if [ $TMUX_VIM_MODE = $MODE_SELECT ]
     then selectPaneDown
-    elif [ $TMUX_VIM_MODE == $MODE_RESIZE ]
+    elif [ $TMUX_VIM_MODE = $MODE_RESIZE ]
     then resizePaneDown
     fi
 }
 
 actionUp() {
-    if [ $TMUX_VIM_MODE == $MODE_SELECT ]
+    if [ $TMUX_VIM_MODE = $MODE_SELECT ]
     then selectPaneUp
-    elif [ $TMUX_VIM_MODE == $MODE_RESIZE ]
+    elif [ $TMUX_VIM_MODE = $MODE_RESIZE ]
     then resizePaneUp
     fi
 }
 
 actionRight() {
-    if [ $TMUX_VIM_MODE == $MODE_SELECT ]
+    if [ $TMUX_VIM_MODE = $MODE_SELECT ]
     then selectPaneRight
-    elif [ $TMUX_VIM_MODE == $MODE_RESIZE ]
+    elif [ $TMUX_VIM_MODE = $MODE_RESIZE ]
     then resizePaneRight
     fi
 }

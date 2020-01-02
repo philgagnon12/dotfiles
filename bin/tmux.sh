@@ -12,12 +12,12 @@ if [[ -z $DESTINATION ]]; then
     exit
 fi
 
-if [[ $2 == "--download-only" ]]; then
+if [[ $2 = "--download-only" ]]; then
     echo "Download only"
     INSTALL_FROM_DOWNLOAD_ONLY=0
 fi
 
-if [[ $2 == "--install-from-download-only" ]]; then
+if [[ $2 = "--install-from-download-only" ]]; then
     echo "Install from download only"
     DOWNLOAD_ONLY=0
 fi
