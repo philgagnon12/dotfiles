@@ -1,3 +1,6 @@
+** .tmux.conf **
+default-shell option is set to ${HOME}/bin/bash ... which causes tmux to crash when not there 
+
 - Install scripts:
     - st ( terminal emulator ) 
     -- libx11 (XQuartz on osx )
