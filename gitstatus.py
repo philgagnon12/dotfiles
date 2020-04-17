@@ -17,6 +17,7 @@ symbol_git_modified='*'
 symbol_git_push='↑'
 symbol_git_pull='↓'
 
+# Need apt-get install python3.8
 gitstatus = subprocess.run(["git", "status", "--porcelain=2", "-b"], capture_output=True)
 
 if gitstatus.returncode == 0:
