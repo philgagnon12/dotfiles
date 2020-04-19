@@ -26,18 +26,19 @@ if gitstatus.returncode == 0:
 
     branch = re.compile("^# branch\.head (.+)", re.MULTILINE ).search(stdout).group(1)
     ab_m = re.compile("^# branch\.ab \+([0-9]+) \-([0-9]+)", re.MULTILINE ).search(stdout)
-    ahead = ab_m.group(1)
-    behind = ab_m.group(2)
 
     output = cyan + symbol_git_branch.encode() + branch.encode() + " ".encode()
+    if ab_m:
+        ahead = ab_m.group(1)
+        behind = ab_m.group(2)
 
-    if int(ahead) > 0:
-        output += green + symbol_git_push.encode() + ahead.encode()
+        if int(ahead) > 0:
+            output += green + symbol_git_push.encode() + ahead.encode()
 
-    if int(behind) > 0:
-        output += red + symbol_git_pull.encode() + behind.encode()
+        if int(behind) > 0:
+            output += red + symbol_git_pull.encode() + behind.encode()
 
-    output += clear
+        output += clear
 
     curses.putp(output)
 
