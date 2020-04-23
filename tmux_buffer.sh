@@ -18,7 +18,7 @@ keyBind() {
 }
 
 loadBuffers () {
-    if [[ -d ${BUFFER_FILES_PATH} ]]
+    if [ -d "${BUFFER_FILES_PATH}" ]
         then find ${BUFFER_FILES_PATH} -type f -exec $0 loadBuffer {} ";"
     fi
 }
@@ -39,7 +39,7 @@ copySelectionPromptForBufferName() {
 
 BUFFER_NAME=$2
 setBuffer() {
-    if [[ -n $BUFFER_NAME ]]
+    if [ -n "$BUFFER_NAME" ]
         then tmux set-buffer -b 0 -n $BUFFER_NAME
     fi
 }
@@ -49,7 +49,7 @@ promptPasteBufferName() {
 }
 
 pasteBuffer(){
-    if [[ -n ${BUFFER_NAME} ]]
+    if [ -n "${BUFFER_NAME}" ]
         then tmux paste-buffer -b ${BUFFER_NAME}
         else tmux paste-buffer
     fi
