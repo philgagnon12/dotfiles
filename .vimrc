@@ -32,8 +32,10 @@ augroup CursorLine
 augroup END
 
 " Cursor line style
-" Commented because base16-vim provides better highlighting
-" hi CursorLine term=bold cterm=bold ctermbg=18
+" if not looking good try
+" hi CursorLine term=reverse ctermbg=8
+hi CursorLine term=reverse ctermbg=19
+hi CursorColumn term=reverse ctermbg=19
 
 " Color theme
 source ~/.dotfiles/base16-shell.vim
